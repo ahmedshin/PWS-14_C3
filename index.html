@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <title>ДЗ_С3</title>
+  
+</head>
+<body>
+  
+
+  <div id="input_city" >
+  
+   <p><input id="my_city" type="text" size="30"  placeholder="Введите ваш город">
+  </p>
+  </div>
+  <p><input id="save" type="button" value="Сохранить" onclick="getMycity()"></p>
+  <!-- -------------------------------------------- -->
+  <div id="greeting" style="display: none;">
+  <p id="greeting_text" style="color: brown; font-size: 20px;"></p>
+  <p><input id="clear" type="button" value="Очистить" onclick="clearCity()"></p>
+  </div>
+  <!-- ----------------------------------------------------- -->
+  
+  <p><b>Ваши предпочтения:</b><Br>
+   <input type="checkbox" name="prefer1" onclick="recChkb()"> не звонить мне<Br>
+
+   <input type="checkbox" name="prefer2" onclick="recChkb()"> я прочитал и согласен с правилами пользования сервисом<Br>
+
+   <input type="checkbox" name="prefer3" onclick="recChkb()"> я не выбираю эту галочку<Br>
+
+   <input type="checkbox" name="prefer4" onclick="recChkb()"> я подтверждаю, что свобода в интернете — это возможность выбирать галочки<Br>
+
+   <input type="checkbox" name="prefer5" onclick="recChkb()"> мне больше 12 лет<Br>
+
+   <input type="checkbox" name="prefer6" onclick="recChkb()"> это задание выполнено правильно<Br>
+  </p>
+  <p><input id="save_opt" type="button" value="Сохранить настройки" onclick="saveOptions()"></p>
+  
+</form>
+<script src="scr/mainscr.js"></script>
+</body>
+</html>
